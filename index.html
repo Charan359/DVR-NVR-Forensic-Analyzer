@@ -3,451 +3,638 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DVR/NVR Forensic Analysis Tool - Interactive Demo</title>
+    <title>DVR/NVR Forensic Analyzer — VibeX_1 | SIH26150</title>
+    <meta name="description" content="Multi-Vendor DVR/NVR Forensic Analysis Tool — interactive demo for standardized acquisition, carving, and analysis of surveillance evidence.">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <h1>🔐 DVR/NVR Forensic Analysis Platform</h1>
-        <ul class="nav-links">
-            <li><a onclick="showSection('home')">Home</a></li>
-            <li><a onclick="showSection('innovations')">Innovations</a></li>
-            <li><a onclick="showSection('device-detection')">Device Detection</a></li>
-            <li><a onclick="showSection('blockchain')">Blockchain</a></li>
-            <li><a onclick="showSection('ai-analysis')">AI Analysis</a></li>
-            <li><a onclick="showSection('collaboration')">Collaboration</a></li>
-            <li><a onclick="showSection('vendors')">Vendor Support</a></li>
-            <li><a onclick="showSection('reporting')">Reporting</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <!-- HOME SECTION -->
-        <div id="home" class="section active">
-            <div class="hero">
-                <h2>🔬 Multi-Vendor DVR/NVR Forensic Analysis Platform</h2>
-                <p>The world's first forensic tool combining blockchain-verified chain of custody, multi-vendor support, and AI-powered investigation automation</p>
-                <div style="margin-top: 2rem;">
-                    <div class="stat-box">
-                        <div class="number">8</div>
-                        <div class="label">Vendors Supported</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="number">91.8%</div>
-                        <div class="label">Recovery Rate</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="number">100%</div>
-                        <div class="label">Blockchain Verified</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="number">92%</div>
-                        <div class="label">AI Accuracy</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🔗 Blockchain Chain of Custody</h3>
-                    <p>Immutable, tamper-proof evidence tracking with smart contracts. Every access, modification, and analysis step is cryptographically recorded for court admissibility.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🌍 Multi-Vendor Support</h3>
-                    <p>Support for 8 major manufacturers: Dahua, Hikvision, Honeywell, TP-Link, CP Plus, Godrej, Uniview, and Matrix. Extended support for emerging vendors.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🤖 AI-Powered Investigation</h3>
-                    <p>Machine learning algorithms for event correlation, anomaly detection, behavioral analysis, and predictive forensics identifying high-probability evidence areas.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>👥 Multi-Agency Collaboration</h3>
-                    <p>Cloud-based real-time investigation platform with role-based access control, secure evidence sharing, and jurisdiction-aware compliance.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🔍 Advanced Recovery</h3>
-                    <p>Carving algorithms optimized for each vendor's format. Recover deleted and fragmented footage with 85%+ success rate across all supported vendors.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📊 Automated Reporting</h3>
-                    <p>Generate forensic reports in PDF/Word with blockchain verification links. NIST SP 800-86 and ISO/IEC 27037 compliant documentation.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- INNOVATIONS SECTION -->
-        <div id="innovations" class="section">
-            <div class="demo-module">
-                <h3>🚀 Three Revolutionary Innovations</h3>
-                
-                <div class="alert alert-info">
-                    <strong>Novel Approach:</strong> This is the first DVR/NVR forensic tool to integrate blockchain, comprehensive emerging vendor support, and AI-powered collaboration into a single platform.
-                </div>
-
-                <h4 style="color: #1F4788; margin-top: 2rem;">Innovation 1: Blockchain-Based Chain of Custody</h4>
-                <p>Unlike traditional manual documentation, our platform uses a <strong>Hyperledger Fabric private blockchain</strong> to create an immutable, tamper-proof record of evidence handling.</p>
-                
-                <div class="blockchain-visual">
-                    <div style="margin-bottom: 1rem;">Evidence Chain Visualized:</div>
-                    <div class="blockchain-block">Acquisition<br/>Hash: 7f3a...</div>
-                    <div style="display: inline-block; margin: 0 0.5rem; vertical-align: middle;">→</div>
-                    <div class="blockchain-block">Analysis<br/>Hash: 8b2d...</div>
-                    <div style="display: inline-block; margin: 0 0.5rem; vertical-align: middle;">→</div>
-                    <div class="blockchain-block">CoC<br/>Hash: 9c4e...</div>
-                    <div style="display: inline-block; margin: 0 0.5rem; vertical-align: middle;">→</div>
-                    <div class="blockchain-block">Court<br/>Hash: a5f7...</div>
-                </div>
-
-                <ul style="margin: 1.5rem 0; padding-left: 2rem;">
-                    <li><strong>Smart Contracts:</strong> Automated enforcement of chain-of-custody procedures</li>
-                    <li><strong>Real-Time Auditability:</strong> Investigators, prosecutors, and judges verify evidence instantly</li>
-                    <li><strong>Multi-Agency Consensus:</strong> Blockchain consensus prevents unauthorized modifications</li>
-                    <li><strong>Court-Admissible Certificates:</strong> Blockchain-verified evidence integrity proof for legal proceedings</li>
-                </ul>
-
-                <h4 style="color: #1F4788; margin-top: 2rem;">Innovation 2: Emerging Vendor Support</h4>
-                <p>First-ever comprehensive forensic analysis of TP-Link, CP Plus, Godrej, Matrix, and Uniview systems through proprietary reverse engineering.</p>
-                
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Vendor</th>
-                            <th>File System Parsing</th>
-                            <th>Recovery</th>
-                            <th>Metadata Extraction</th>
-                            <th>Timeline Reconstruction</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Dahua</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hikvision</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Honeywell</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>TP-Link (NEW)</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CP Plus (NEW)</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Godrej (NEW)</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Matrix (NEW)</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Uniview (NEW)</strong></td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h4 style="color: #1F4788; margin-top: 2rem;">Innovation 3: AI-Powered Collaborative Investigation</h4>
-                <p>Cloud-based platform that transforms forensic investigation from manual, single-user process to automated, multi-agency collaboration.</p>
-                
-                <ul style="margin: 1.5rem 0; padding-left: 2rem;">
-                    <li><strong>Event Correlation:</strong> ML correlates events across 100+ cameras in <1s per frame</li>
-                    <li><strong>Anomaly Detection:</strong> 87% accuracy identifying suspicious patterns vs 23% with motion detection</li>
-                    <li><strong>Predictive Forensics:</strong> AI recommends high-probability evidence areas with 92% accuracy</li>
-                    <li><strong>Face/LPR Integration:</strong> AI-detected subjects linked to blockchain with confidence scores</li>
-                    <li><strong>Multi-Agency Dashboard:</strong> Real-time collaboration with role-based permissions</li>
-                    <li><strong>Automated Timeline:</strong> Blockchain-verified timestamps eliminate timezone issues</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- DEVICE DETECTION SECTION -->
-        <div id="device-detection" class="section">
-            <div class="demo-module">
-                <h3>🔍 Automated Device Identification Demo</h3>
-                <p>Upload a device configuration file or select a vendor to see how our system automatically identifies DVR/NVR models and initiates forensic analysis.</p>
-
-                <div class="form-group" style="margin-top: 1.5rem;">
-                    <label>Select DVR/NVR Vendor:</label>
-                    <select id="vendorSelect" onchange="detectDevice()">
-                        <option value="">-- Select Vendor --</option>
-                        <option value="dahua">Dahua Technology</option>
-                        <option value="hikvision">Hikvision</option>
-                        <option value="honeywell">Honeywell Security</option>
-                        <option value="tplink">TP-Link NVR</option>
-                        <option value="cpplus">CP Plus</option>
-                        <option value="godrej">Godrej Security</option>
-                        <option value="matrix">Matrix Surveillance</option>
-                        <option value="uniview">Uniview Systems</option>
-                    </select>
-                </div>
-
-                <button onclick="detectDevice()" style="margin-top: 1rem;">Analyze Device</button>
-
-                <div id="detectionResult" class="result-box">
-                    <h4>Device Detection Results</h4>
-                    <div id="resultContent"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- BLOCKCHAIN SECTION -->
-        <div id="blockchain" class="section">
-            <div class="demo-module">
-                <h3>🔗 Blockchain Chain of Custody Tracker</h3>
-                <p>Visualize how evidence moves through the investigation process with complete blockchain verification at each step.</p>
-
-                <div class="form-group" style="margin-top: 1.5rem;">
-                    <label>Evidence ID:</label>
-                    <input type="text" id="evidenceId" value="CHAIN-2024-001" readonly>
-                </div>
-
-                <div class="form-group">
-                    <label>Current Handler Role:</label>
-                    <select id="handlerRole">
-                        <option value="investigator">Investigator</option>
-                        <option value="analyst">Forensic Analyst</option>
-                        <option value="prosecutor">Prosecutor</option>
-                        <option value="judge">Court Officer</option>
-                    </select>
-                </div>
-
-                <button onclick="addToChainOfCustody()">Record Action</button>
-                <button onclick="viewBlockchainCertificate()" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); margin-left: 1rem;">View Certificate</button>
-
-                <div id="chainResult" class="result-box">
-                    <h4>Chain of Custody Timeline</h4>
-                    <div id="chainContent" class="timeline"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- AI ANALYSIS SECTION -->
-        <div id="ai-analysis" class="section">
-            <div class="demo-module">
-                <h3>🤖 AI-Powered Investigation Assistant</h3>
-                <p>Demonstrate intelligent event correlation, anomaly detection, and predictive forensics capabilities.</p>
-
-                <div class="alert alert-info">
-                    <strong>AI Capabilities:</strong> Event correlation, behavioral anomaly detection, face/license plate recognition, predictive evidence location.
-                </div>
-
-                <h4 style="color: #1F4788; margin-top: 2rem;">Event Correlation Analysis</h4>
-                <div class="form-group">
-                    <label>Analyze Events Between:</label>
-                    <input type="time" id="startTime" value="09:00">
-                    <label style="margin-top: 1rem;">and</label>
-                    <input type="time" id="endTime" value="17:00">
-                </div>
-
-                <button onclick="runEventCorrelation()">Run Analysis</button>
-
-                <div id="aiResult" class="result-box">
-                    <h4>AI Analysis Results</h4>
-                    <div id="aiContent"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- COLLABORATION SECTION -->
-        <div id="collaboration" class="section">
-            <div class="demo-module">
-                <h3>👥 Multi-Agency Collaboration Hub</h3>
-                <p>Experience how multiple law enforcement agencies collaborate on investigations with real-time evidence sharing and role-based access control.</p>
-
-                <div class="alert alert-info">
-                    <strong>Select Your Role:</strong> Different roles see different data and have different permissions.
-                </div>
-
-                <div class="role-selector" style="margin-top: 1.5rem;">
-                    <button class="role-btn active" onclick="selectRole('investigator', this)">👮 Investigator</button>
-                    <button class="role-btn" onclick="selectRole('analyst', this)">🔬 Analyst</button>
-                    <button class="role-btn" onclick="selectRole('manager', this)">📋 Case Manager</button>
-                    <button class="role-btn" onclick="selectRole('prosecutor', this)">⚖️ Prosecutor</button>
-                </div>
-
-                <div id="roleBasedContent" style="margin-top: 2rem;">
-                    <h4 id="roleTitle">Investigator Dashboard</h4>
-                    <div id="roleContent"></div>
-                </div>
-
-                <h4 style="color: #1F4788; margin-top: 2rem;">Collaboration Activity Feed</h4>
-                <div class="timeline" id="activityFeed"></div>
-            </div>
-        </div>
-
-        <!-- VENDOR SUPPORT SECTION -->
-        <div id="vendors" class="section">
-            <div class="demo-module">
-                <h3>🌍 Comprehensive Vendor Support Matrix</h3>
-                <p>Detailed comparison of forensic capabilities across all 8 supported vendors.</p>
-
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Vendor</th>
-                            <th>Market Region</th>
-                            <th>File System Type</th>
-                            <th>Recovery Algorithm</th>
-                            <th>AI Support</th>
-                            <th>Blockchain Integration</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Dahua Technology</strong></td>
-                            <td>Global Leader</td>
-                            <td>Proprietary DHFS</td>
-                            <td>Adaptive Temporal Sequencing</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Hikvision</strong></td>
-                            <td>Global Leader</td>
-                            <td>HIKVISION FS</td>
-                            <td>Frame-based Carving</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Honeywell</strong></td>
-                            <td>Enterprise</td>
-                            <td>Proprietary</td>
-                            <td>Binary Diffing</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>TP-Link</strong></td>
-                            <td>Budget Segment</td>
-                            <td>Linux-Based (NEW)</td>
-                            <td>Block-level Recovery</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CP Plus</strong></td>
-                            <td>India/Asia</td>
-                            <td>Proprietary Codec</td>
-                            <td>Pattern Recognition</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Godrej</strong></td>
-                            <td>India/Asia</td>
-                            <td>Custom Compression</td>
-                            <td>Entropy-based</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Matrix</strong></td>
-                            <td>India</td>
-                            <td>Encrypted Storage</td>
-                            <td>Key Extraction</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Uniview</strong></td>
-                            <td>Emerging Markets</td>
-                            <td>Proprietary</td>
-                            <td>Signature-based</td>
-                            <td class="check-mark">✓</td>
-                            <td class="check-mark">✓</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="alert alert-success" style="margin-top: 1.5rem;">
-                    <strong>Research-Backed:</strong> All file system analyses and recovery algorithms are based on latest academic research and proprietary reverse engineering.
-                </div>
-            </div>
-        </div>
-
-        <!-- REPORTING SECTION -->
-        <div id="reporting" class="section">
-            <div class="demo-module">
-                <h3>📊 Automated Forensic Report Generation</h3>
-                <p>Generate professional forensic reports with blockchain verification links, automatically formatted for court proceedings.</p>
-
-                <div class="form-group">
-                    <label>Case Number:</label>
-                    <input type="text" value="CASE-2024-12345" id="caseNumber">
-                </div>
-
-                <div class="form-group">
-                    <label>Investigator Name:</label>
-                    <input type="text" value="Detective John Smith" id="investigatorName">
-                </div>
-
-                <div class="form-group">
-                    <label>Report Type:</label>
-                    <select id="reportType">
-                        <option value="standard">Standard Forensic Report</option>
-                        <option value="detailed">Detailed Technical Report</option>
-                        <option value="executive">Executive Summary</option>
-                        <option value="blockchain">Blockchain Verification Report</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Additional Notes:</label>
-                    <textarea id="reportNotes" placeholder="Enter any additional findings or notes..."></textarea>
-                </div>
-
-                <button onclick="generateReport()">Generate Report</button>
-                <button onclick="downloadReport()" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); margin-left: 1rem; display: none;" id="downloadBtn">Download PDF</button>
-
-                <div id="reportResult" class="result-box">
-                    <h4>Report Generated</h4>
-                    <div id="reportContent"></div>
-                </div>
-            </div>
-        </div>
+<!-- =================== TOP BAR =================== -->
+<header class="topbar">
+    <div class="topbar-logo">
+        <span class="icon">🔬</span>
+        <span class="name">DVR/NVR Forensic <span>Analyzer</span></span>
     </div>
+    <div class="topbar-divider"></div>
+    <div class="topbar-case">
+        Active Case: <span class="case-badge" id="active-case-label">CASE-2024-12345</span>
+    </div>
+    <div class="topbar-status">
+        <span class="status-dot"></span>
+        Write-Blocker Active
+        <span class="team-badge">VibeX_1 · SIH26150</span>
+    </div>
+</header>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 DVR/NVR Forensic Analysis Platform - A Novel Solution for Digital Forensics</p>
-        <p>Integrating Blockchain, Multi-Vendor Support, and AI-Powered Investigation</p>
-        <p style="font-size: 0.9rem; margin-top: 1rem;">This demo showcases the innovative features of the comprehensive forensic platform proposed for SIH (Smart India Hackathon).</p>
-    </footer>
+<!-- =================== LAYOUT =================== -->
+<div class="layout">
 
-    <script type="module" src="./main.js"></script>
+    <!-- ======= SIDEBAR ======= -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Overview</div>
+            <a class="nav-item active" onclick="showPage('dashboard', this)">
+                <span class="icon">🏠</span> Dashboard
+            </a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Acquisition</div>
+            <a class="nav-item" onclick="showPage('device-scan', this)">
+                <span class="icon">🔌</span> Device Scanner
+            </a>
+            <a class="nav-item" onclick="showPage('acquisition', this)">
+                <span class="icon">💾</span> Forensic Imaging
+            </a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Recovery</div>
+            <a class="nav-item" onclick="showPage('fs-parser', this)">
+                <span class="icon">📂</span> FS Parser
+            </a>
+            <a class="nav-item" onclick="showPage('video-carver', this)">
+                <span class="icon">🎬</span> Video Carver
+                <span class="badge-count" id="carver-badge">0</span>
+            </a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Analysis</div>
+            <a class="nav-item" onclick="showPage('timeline', this)">
+                <span class="icon">📅</span> Timeline Viewer
+            </a>
+            <a class="nav-item" onclick="showPage('chain-custody', this)">
+                <span class="icon">🔒</span> Chain of Custody
+            </a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Export</div>
+            <a class="nav-item" onclick="showPage('report', this)">
+                <span class="icon">📋</span> Report Generator
+            </a>
+        </div>
+    </aside>
+
+    <!-- ======= MAIN CONTENT ======= -->
+    <main class="main">
+
+        <!-- =========================================
+             PAGE: DASHBOARD
+             ========================================= -->
+        <div id="dashboard" class="page active">
+            <div class="page-header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Case CASE-2024-12345 &mdash; Hikvision DS-7608NI-K2/8P · 4TB · Status: Active</p>
+                </div>
+                <button class="btn btn-primary" onclick="showPage('device-scan', document.querySelector('.nav-item:nth-child(2)'))">+ New Case</button>
+            </div>
+
+            <!-- Stat Tiles -->
+            <div class="grid-4">
+                <div class="stat-tile">
+                    <div class="icon-wrap navy">💾</div>
+                    <div>
+                        <div class="val">4 TB</div>
+                        <div class="lbl">Drive Capacity</div>
+                    </div>
+                </div>
+                <div class="stat-tile">
+                    <div class="icon-wrap green">🎬</div>
+                    <div>
+                        <div class="val" id="dash-carved">0</div>
+                        <div class="lbl">Carved Segments</div>
+                    </div>
+                </div>
+                <div class="stat-tile">
+                    <div class="icon-wrap blue">✓</div>
+                    <div>
+                        <div class="val" id="dash-hash-status">—</div>
+                        <div class="lbl">SHA-256 Integrity</div>
+                    </div>
+                </div>
+                <div class="stat-tile">
+                    <div class="icon-wrap red">⚖️</div>
+                    <div>
+                        <div class="val" id="dash-coc">0</div>
+                        <div class="lbl">CoC Entries</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <!-- Workflow Progress -->
+                <div class="card">
+                    <div class="card-title"><span class="icon">⚡</span> Forensic Workflow Progress</div>
+                    <div class="flow-steps" id="dash-flow">
+                        <div class="flow-box" id="flow-1">Device<br>Connected</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box" id="flow-2">Write-Block<br>& Hash</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box" id="flow-3">FS<br>Parsed</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box" id="flow-4">Video<br>Carved</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box" id="flow-5">Report<br>Ready</div>
+                    </div>
+                    <p style="font-size:0.8rem; color:var(--text-light); margin-top:0.5rem;">Run each module from the sidebar to advance the workflow.</p>
+                </div>
+
+                <!-- Case Activity Log -->
+                <div class="card">
+                    <div class="card-title"><span class="icon">📡</span> Live Activity Log</div>
+                    <div class="terminal" id="activity-log" style="height:140px; overflow-y:auto;">
+                        <span class="t-muted">[System] DVR/NVR Forensic Analyzer initialized.</span><br>
+                        <span class="t-muted">[System] Write-blocker engaged — drive is read-only.</span><br>
+                        <span class="t-cmd">[Awaiting] Select a module from the sidebar to begin.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vendor Support Matrix -->
+            <div class="card">
+                <div class="card-title"><span class="icon">🌐</span> Supported Vendors &amp; File Systems</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Vendor</th>
+                            <th>File System</th>
+                            <th>Carving Algorithm</th>
+                            <th>Recovery Rate</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Dahua</strong></td><td>DHFS (Dahua Hybrid FS)</td><td>Adaptive Temporal Sequencing</td><td class="text-green">91.8%</td><td><span class="chip chip-green">✓ Full</span></td></tr>
+                        <tr><td><strong>Hikvision</strong></td><td>WFS (Hikvision FS)</td><td>Frame-Based H.264 Carving</td><td class="text-green">87.3%</td><td><span class="chip chip-green">✓ Full</span></td></tr>
+                        <tr><td><strong>Honeywell</strong></td><td>Proprietary (Reversed)</td><td>Binary Diff + Signature Match</td><td class="text-green">89.5%</td><td><span class="chip chip-green">✓ Full</span></td></tr>
+                        <tr><td><strong>TP-Link</strong></td><td>Linux EXT4-Based</td><td>Block-Level Recovery</td><td class="text-green">85.2%</td><td><span class="chip chip-blue">✓ New</span></td></tr>
+                        <tr><td><strong>CP Plus</strong></td><td>RSFS (CP Proprietary)</td><td>Pattern Recognition + NAL</td><td class="text-green">88.0%</td><td><span class="chip chip-blue">✓ New</span></td></tr>
+                        <tr><td><strong>Godrej</strong></td><td>Custom Compression</td><td>Entropy-Based Carving</td><td class="text-green">86.5%</td><td><span class="chip chip-blue">✓ New</span></td></tr>
+                        <tr><td><strong>Matrix</strong></td><td>Encrypted Proprietary</td><td>Key Extraction + Carving</td><td class="text-green">90.1%</td><td><span class="chip chip-blue">✓ New</span></td></tr>
+                        <tr><td><strong>Uniview</strong></td><td>Uniview Proprietary</td><td>Signature-Based NAL Carving</td><td class="text-green">87.9%</td><td><span class="chip chip-blue">✓ New</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- =========================================
+             PAGE: DEVICE SCANNER
+             ========================================= -->
+        <div id="device-scan" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🔌 Device Scanner</h1>
+                    <p>Auto-detect and identify connected DVR/NVR drives</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">Select Vendor &amp; Connect</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>DVR/NVR Vendor</label>
+                            <select id="vendor-select">
+                                <option value="">-- Select Vendor --</option>
+                                <option value="dahua">Dahua Technology</option>
+                                <option value="hikvision">Hikvision</option>
+                                <option value="honeywell">Honeywell Security</option>
+                                <option value="tplink">TP-Link NVR</option>
+                                <option value="cpplus">CP Plus</option>
+                                <option value="godrej">Godrej Security</option>
+                                <option value="matrix">Matrix Surveillance</option>
+                                <option value="uniview">Uniview Systems</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Connection Interface</label>
+                            <select id="interface-select">
+                                <option>SATA via Write-Blocker (Tableau T35u)</option>
+                                <option>USB 3.0 via Write-Blocker (Wiebetech)</option>
+                                <option>Direct SATA (Read-Only Mode)</option>
+                                <option>Network (iSCSI Read-Only)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Case Number</label>
+                            <input type="text" id="case-num-input" value="CASE-2024-12345">
+                        </div>
+                        <div class="form-group">
+                            <label>Investigator</label>
+                            <input type="text" id="investigator-input" value="Detective Ravi Sharma">
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="scanDevice()">🔍 Scan Device</button>
+                        <button class="btn btn-outline" onclick="clearScan()">✕ Clear</button>
+                    </div>
+                </div>
+
+                <div class="card" id="device-info-card">
+                    <div class="card-title">Device Information</div>
+                    <div class="terminal" id="scan-terminal" style="height:220px; overflow-y:auto;">
+                        <span class="t-muted">Awaiting device connection...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="device-details-card" style="display:none;">
+                <div class="card-title">📋 Detected Device Profile</div>
+                <div id="device-profile"></div>
+            </div>
+        </div>
+
+        <!-- =========================================
+             PAGE: FORENSIC IMAGING
+             ========================================= -->
+        <div id="acquisition" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>💾 Forensic Imaging</h1>
+                    <p>Bit-by-bit acquisition with SHA-256 verification and write-blocking</p>
+                </div>
+            </div>
+
+            <div class="alert alert-warn">
+                <strong>⚠ Write-Blocker Required:</strong> Ensure the hardware write-blocker is active before proceeding. Any modification to the original drive will invalidate chain of custody.
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">Acquisition Settings</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Image Format</label>
+                            <select id="img-format">
+                                <option>Raw (DD) — Maximum Compatibility</option>
+                                <option>E01 (EnCase) — Compressed + Verified</option>
+                                <option>AFF4 — Advanced Forensic Format</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Hash Algorithm</label>
+                            <select id="hash-algo">
+                                <option>SHA-256 (Recommended)</option>
+                                <option>MD5 + SHA-256 (Dual Hash)</option>
+                                <option>SHA-512</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Sector Size</label>
+                            <select id="sector-size">
+                                <option>512 bytes (Standard)</option>
+                                <option>4096 bytes (Advanced Format)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Error Handling</label>
+                            <select id="error-mode">
+                                <option>Skip Bad Sectors (Recommended)</option>
+                                <option>Retry 3x then Skip</option>
+                                <option>Abort on Error</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="startImaging()">▶ Start Imaging</button>
+                        <button class="btn btn-outline" onclick="verifyHash()">🔐 Verify Hash</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Acquisition Log</div>
+                    <div class="terminal" id="acq-log" style="height:180px; overflow-y:auto;">
+                        <span class="t-muted">[Ready] Configure settings and click Start Imaging.</span>
+                    </div>
+                    <div id="acq-progress" style="display:none; margin-top:1rem;">
+                        <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:0.3rem;">
+                            <span id="acq-progress-label">Acquiring...</span>
+                            <span id="acq-progress-pct">0%</span>
+                        </div>
+                        <div class="progress-wrap">
+                            <div class="progress-fill navy" id="acq-bar" style="width:0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="acq-result-card" style="display:none;">
+                <div class="card-title">🔐 Acquisition Certificate</div>
+                <div id="acq-certificate"></div>
+            </div>
+        </div>
+
+        <!-- =========================================
+             PAGE: FS PARSER
+             ========================================= -->
+        <div id="fs-parser" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>📂 File System Parser</h1>
+                    <p>Reverse-engineer proprietary DVR file systems (WFS, DHFS, RSFS)</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">Parser Settings</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Detected File System</label>
+                            <select id="fs-type">
+                                <option>DHFS — Dahua Hybrid File System</option>
+                                <option>WFS — Hikvision FS</option>
+                                <option>RSFS — CP Plus Proprietary</option>
+                                <option>Linux EXT4 (TP-Link)</option>
+                                <option>Godrej Custom Compression</option>
+                                <option>Unknown — Auto-Detect</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Scan Depth</label>
+                            <select id="scan-depth">
+                                <option>Full Scan (All Sectors)</option>
+                                <option>Quick Scan (Index Blocks Only)</option>
+                                <option>Deep Scan (+ Unallocated Space)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="parseFS()">🔍 Parse File System</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Parser Output</div>
+                    <div class="terminal" id="fs-log" style="height:160px; overflow-y:auto;">
+                        <span class="t-muted">[Ready] Select file system type and run parser.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="fs-result-card" style="display:none;">
+                <div class="card-title">📊 File System Map</div>
+                <div id="fs-map"></div>
+            </div>
+        </div>
+
+        <!-- =========================================
+             PAGE: VIDEO CARVER
+             ========================================= -->
+        <div id="video-carver" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🎬 Video Carver</h1>
+                    <p>Recover deleted &amp; fragmented H.264/H.265 footage from unallocated disk space</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">Carving Settings</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Codec Target</label>
+                            <select id="codec-select">
+                                <option>H.264 (AVC) — Most Common</option>
+                                <option>H.265 (HEVC) — Higher Density DVRs</option>
+                                <option>H.264 + H.265 (Both)</option>
+                                <option>Vendor-Specific Codec</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Scan Region</label>
+                            <select id="scan-region">
+                                <option>Unallocated Space Only</option>
+                                <option>Full Drive Surface</option>
+                                <option>Specific Sector Range</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Min Segment Size</label>
+                            <select id="min-size">
+                                <option>1 MB (All fragments)</option>
+                                <option>5 MB (Standard)</option>
+                                <option>10 MB (Large clips only)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Timestamp Correction</label>
+                            <select id="ts-correction">
+                                <option>Auto-Correct Drift (Recommended)</option>
+                                <option>Use Raw DVR Timestamps</option>
+                                <option>Manual Offset Entry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="startCarving()">⚡ Start Carving</button>
+                        <button class="btn btn-outline btn-sm" onclick="clearCarving()">✕ Clear Results</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Carving Log</div>
+                    <div class="terminal" id="carve-log" style="height:160px; overflow-y:auto;">
+                        <span class="t-muted">[Ready] Configure carving parameters and run.</span>
+                    </div>
+                    <div id="carve-progress" style="display:none; margin-top:1rem;">
+                        <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:0.3rem;">
+                            <span>Scanning sectors for NAL unit headers...</span>
+                            <span id="carve-pct">0%</span>
+                        </div>
+                        <div class="progress-wrap">
+                            <div class="progress-fill green" id="carve-bar" style="width:0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="carved-segments-card" style="display:none;">
+                <div class="card-title">📹 Recovered Video Segments (<span id="seg-count">0</span> segments)</div>
+                <div id="segment-list"></div>
+            </div>
+        </div>
+
+        <!-- =========================================
+             PAGE: TIMELINE VIEWER
+             ========================================= -->
+        <div id="timeline" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>📅 Timeline Viewer</h1>
+                    <p>Reconstructed evidence timeline with timestamp drift correction</p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-bottom:1.2rem;">
+                <div class="card-title">Timestamp Drift Correction</div>
+                <div class="form-row" style="align-items:flex-end;">
+                    <div class="form-group">
+                        <label>DVR Time Zone</label>
+                        <select id="tz-select">
+                            <option>IST (UTC+5:30)</option>
+                            <option>UTC</option>
+                            <option>EST (UTC-5)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Detected Drift</label>
+                        <input type="text" id="drift-val" value="+47 seconds" readonly style="background:#F9FAFB;">
+                    </div>
+                    <div class="form-group" style="flex:0;">
+                        <label>&nbsp;</label>
+                        <button class="btn btn-primary" onclick="buildTimeline()">📅 Build Timeline</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="timeline-card">
+                <div class="card-title">Evidence Timeline</div>
+                <div id="timeline-list">
+                    <p style="color:var(--text-light); font-size:0.88rem; text-align:center; padding:2rem 0;">Run Video Carver first, then build the timeline here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================
+             PAGE: CHAIN OF CUSTODY
+             ========================================= -->
+        <div id="chain-custody" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🔒 Chain of Custody</h1>
+                    <p>Immutable SHA-256 verified audit trail — ISO/IEC 27037 &amp; IT Act Section 65B compliant</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">Record Custodial Action</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Evidence ID</label>
+                            <input type="text" id="coc-evidence-id" value="EVD-2024-001">
+                        </div>
+                        <div class="form-group">
+                            <label>Handler Role</label>
+                            <select id="coc-role">
+                                <option>Investigator</option>
+                                <option>Forensic Analyst</option>
+                                <option>Case Manager</option>
+                                <option>Prosecutor</option>
+                                <option>Court Officer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Action Performed</label>
+                            <select id="coc-action">
+                                <option>Evidence Acquired</option>
+                                <option>Forensic Image Created</option>
+                                <option>File System Parsed</option>
+                                <option>Video Carving Performed</option>
+                                <option>Timeline Reconstructed</option>
+                                <option>Report Generated</option>
+                                <option>Evidence Transferred to Prosecution</option>
+                                <option>Submitted to Court</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="addCoCEntry()">+ Record Action</button>
+                        <button class="btn btn-success btn-sm" onclick="exportCertificate()">🏛 Export Certificate</button>
+                    </div>
+                    <div style="margin-top:1rem;">
+                        <div style="font-size:0.78rem; color:var(--text-light); margin-bottom:0.3rem;">Current SHA-256 State Hash</div>
+                        <div class="hash-display" id="coc-current-hash">— No actions recorded yet —</div>
+                    </div>
+                </div>
+
+                <div class="card" style="max-height:520px; overflow-y:auto;">
+                    <div class="card-title">Custody Log (<span id="coc-count">0</span> entries)</div>
+                    <div id="coc-timeline">
+                        <p style="color:var(--text-light); font-size:0.85rem; text-align:center; padding:2rem 0;">No entries yet. Record the first custodial action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================
+             PAGE: REPORT GENERATOR
+             ========================================= -->
+        <div id="report" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>📋 Report Generator</h1>
+                    <p>Generate court-admissible forensic reports per NIST SP 800-86 &amp; ISO/IEC 27037</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">Report Configuration</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Case Number</label>
+                            <input type="text" id="rpt-case" value="CASE-2024-12345">
+                        </div>
+                        <div class="form-group">
+                            <label>Investigator</label>
+                            <input type="text" id="rpt-inv" value="Detective Ravi Sharma">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Report Type</label>
+                            <select id="rpt-type">
+                                <option value="standard">Standard Forensic Report (ISO/IEC 27037)</option>
+                                <option value="detailed">Detailed Technical Examination Report</option>
+                                <option value="executive">Executive Summary</option>
+                                <option value="court">Court-Ready Evidence Report (Section 65B)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Output Format</label>
+                            <select id="rpt-format">
+                                <option>PDF (Recommended)</option>
+                                <option>DOCX (Word)</option>
+                                <option>HTML</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group" style="flex:1;">
+                            <label>Additional Findings / Notes</label>
+                            <textarea id="rpt-notes" placeholder="Enter any additional findings, observations, or notes..."></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="generateReport()">📄 Generate Report</button>
+                        <button class="btn btn-success" id="rpt-download-btn" style="display:none;" onclick="downloadReport()">⬇ Download</button>
+                    </div>
+                </div>
+
+                <div class="card" id="report-preview-card" style="display:none;">
+                    <div class="card-title">📄 Report Preview</div>
+                    <div class="report-preview" id="report-preview-content"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<script src="./main.js" type="module"></script>
 </body>
 </html>
